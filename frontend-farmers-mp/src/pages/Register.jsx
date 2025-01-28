@@ -25,7 +25,7 @@ const Register = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:3000/api/v1/auth/register",
+        "https://temp-ofzo.onrender.com/api/v1/auth/register",
         {
           name,
           email,

@@ -17,7 +17,7 @@ const Login = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "http://localhost:3000/api/v1/auth/login",
+        "https://temp-ofzo.onrender.com/api/v1/auth/login",
         {
           email,
           password,

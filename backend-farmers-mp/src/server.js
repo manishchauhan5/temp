@@ -5,13 +5,9 @@ const authRouter = require("./routes/authRoutes");
 const cors = require("cors");
 
 const app = express()
-const corsOptions = {
-  origin: 'http://localhost:3000', // Allow only this origin
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific methods
-  allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
-};
 
-app.use(cors(corsOptions));
+app.use(cors()); 
+
 app.use(express.json());
 
 app.use("/api/v1/auth", authRouter);

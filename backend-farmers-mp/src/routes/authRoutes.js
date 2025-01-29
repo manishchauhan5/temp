@@ -2,6 +2,10 @@ const express = require('express');
 const { registerController, loginController, requestPasswordReset, verifyOTP, setNewPassword,  } = require('../controllers/authController');
 const router = express.Router();
 
+const cors = require("cors");
+
+app.use(cors()); 
+
 router.post('/register', registerController);
 
 router.post('/login', loginController);

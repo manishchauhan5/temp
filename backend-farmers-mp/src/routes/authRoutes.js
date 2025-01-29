@@ -4,7 +4,7 @@ const router = express.Router();
 
 const cors = require("cors");
 
-app.use(cors()); 
+router.use(cors()); 
 
 router.post('/register', registerController);
 
